@@ -3,7 +3,6 @@
 class Furnace < Formula
   desc "Inference server for Burn and ONNX models, speaking the KServe / Triton protocol"
   homepage "https://github.com/Gilfeather/furnace"
-  version "0.9.0"
   license "MIT"
 
   on_macos do
