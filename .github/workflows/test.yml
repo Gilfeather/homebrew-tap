@@ -12,14 +12,14 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, macos-13, ubuntu-latest]
+        os: [macos-latest, macos-15-intel, ubuntu-latest]
     steps:
     - uses: actions/checkout@v5
+    # Taps this repository itself, as gilfeather/tap
     - name: Set up Homebrew
       uses: Homebrew/actions/setup-homebrew@main
     - name: Install from this checkout
       run: |
-        brew tap gilfeather/tap "$GITHUB_WORKSPACE"
         brew install gilfeather/tap/furnace
         brew test gilfeather/tap/furnace
         brew audit --strict gilfeather/tap/furnace
