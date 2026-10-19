@@ -37,6 +37,8 @@ class Furnace < Formula
   def install
     # The binary and its weights stay together in libexec; bin gets a launcher
     libexec.install Dir["furnace-*"].first => "furnace"
+    # A release asset is the bare binary, downloaded without the executable bit
+    chmod 0755, libexec/"furnace"
     resource("resnet18-weights").stage { libexec.install "resnet18.bpk" }
     bin.write_exec_script libexec/"furnace"
   end
