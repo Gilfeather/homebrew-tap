@@ -7,30 +7,30 @@ class Furnace < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.10.0/furnace-macos-aarch64"
-      sha256 "8e90b2a7e0fe908c7b4317a615194b3f6f35a27b5192a0341881e7edf16b48a8"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.11.0/furnace-macos-aarch64"
+      sha256 "f737cc44b9890b8ae8d63f34595927cb98686b5c1e252733d916a5a4594f78f8"
     end
     on_intel do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.10.0/furnace-macos-x86_64"
-      sha256 "62120751cd07817803b2767d3c6e5663932b5f846de8436ba86a0282ce4b67e9"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.11.0/furnace-macos-x86_64"
+      sha256 "fd3a79ca5107b57b0c9b1536a2b3f7c2a01e6e444b718221f3f24b02fb410b3b"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.10.0/furnace-linux-aarch64"
-      sha256 "6c5ece7ecd0ae387521a2b75fb38909c2a74daecf9d33831ebe276cef0c15cc1"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.11.0/furnace-linux-aarch64"
+      sha256 "237cbf25d0f00d83d29111275e432ea36e0b39d6d3d1d544fa9b7fb56608b32a"
     end
     on_intel do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.10.0/furnace-linux-x86_64"
-      sha256 "76300f2045dd3134d32ef297c9b250473fcdb7efd2ac28cd99dc820a23cd827e"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.11.0/furnace-linux-x86_64"
+      sha256 "62ba1f574abe28ba8452e6f8fa4acaed4d4ee8708720a38e6b5e5bfecf422cd3"
     end
   end
 
   # Weights of the built-in ResNet-18, found next to the binary
   resource "resnet18-weights" do
-    url "https://github.com/Gilfeather/furnace/releases/download/v0.10.0/resnet18.bpk"
-    sha256 "01dcdaf8cef9e62422a282491c7820127dda81dee3ec5d816a4d2a69b8aad623"
+    url "https://github.com/Gilfeather/furnace/releases/download/v0.11.0/resnet18.bpk"
+    sha256 "6d52476a4bb10f4b8ff706b84df6a471af376e14297b0e11a524d1285f1c591a"
   end
 
   def install
