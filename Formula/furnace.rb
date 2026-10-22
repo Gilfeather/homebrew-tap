@@ -7,30 +7,30 @@ class Furnace < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.13.0/furnace-macos-aarch64"
-      sha256 "c6ed33182fb857e2509000874f199a3391c092ef12160eecd6210339a86deefb"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.14.0/furnace-macos-aarch64"
+      sha256 "b7a9ef9ccba6c14f92301fa0fc9f523eb158e2e4f8baa8a6fd595e8175acfd86"
     end
     on_intel do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.13.0/furnace-macos-x86_64"
-      sha256 "6e1cefbb53378790d2737770d509a112592bea29bb01a6b16e233264300ed0d4"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.14.0/furnace-macos-x86_64"
+      sha256 "670555a41c9ab11d28f43e6dc2ec15c0ff7e6182a7f011111f850b37456b2db8"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.13.0/furnace-linux-aarch64"
-      sha256 "31d3c004b2a05415a11410355881c52bb45fcdf6f87942b24d7b6770e33a1a45"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.14.0/furnace-linux-aarch64"
+      sha256 "2006c445034521e76b48a1be38b7e4cf4a5f7a8d41737b2047c50b9698f89f24"
     end
     on_intel do
-      url "https://github.com/Gilfeather/furnace/releases/download/v0.13.0/furnace-linux-x86_64"
-      sha256 "c8c01f6113c5ba27d9608888c501320a423acf3f114430ddb1b6372df10265f7"
+      url "https://github.com/Gilfeather/furnace/releases/download/v0.14.0/furnace-linux-x86_64"
+      sha256 "4555f92398ab093e8088eb18e78d47b7e66f18994657b674e4f73099dfe018de"
     end
   end
 
   # Weights of the built-in ResNet-18, found next to the binary
   resource "resnet18-weights" do
-    url "https://github.com/Gilfeather/furnace/releases/download/v0.13.0/resnet18.bpk"
-    sha256 "1ec2a133d50e0a08253685236942b46e5eae2093e33993ae04c75ac5ee528da9"
+    url "https://github.com/Gilfeather/furnace/releases/download/v0.14.0/resnet18.bpk"
+    sha256 "26683c6693055134e3ba9a06c0323417df1a6b54de702ad34fd5882c45edf524"
   end
 
   def install
